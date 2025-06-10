@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form action="./Table.html" autocomplete="on">
+        <table border="1">
+            <tr>
+                <td><label for="name">Enter Name</label></td>
+                <td><input type="text" id="name" required title="enter user name" pattern="[a-zA-Z0-9\s]+{4,8}"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">G mail</label></td>
+                <td><input type="email" name="" id="mail" required pattern="[a-zA-Z0-9]+@gmail\.com"></td>
+            </tr>
+            <tr>
+                <td><label for="num">Number</label></td>
+                <td><input type="tel" name="" id="num" required pattern="\+91 [6-9][0-9]{9}"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="text" name="" id="pass" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date</label></td>
+                <td><input type="text" name="" id="date" required pattern="\d{4}-\d{2}-\d{2}"></td>
+            </tr>
+        </table>
+        <button>Submit</button>
+    </form>
+    
+    </center>
+    
+</body>
+</html>
